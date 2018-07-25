@@ -1,0 +1,26 @@
+.main-header {
+  background-color: #202020;
+}
+
+.logo {
+  color: #FF4500;
+}
+
+.sidebar-toggle {
+  color: #FFF;
+}
+
+a:link {
+  color: #FF4500;;
+} a:visited {
+  color: #FF4500;
+} a:active {
+  color: #FF4500;
+}
+a:hover {
+	color:#f00;
+}
+
+.white-text {
+  color: #FFF;
+}

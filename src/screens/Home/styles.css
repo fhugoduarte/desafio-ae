@@ -1,0 +1,14 @@
+.content {
+  padding: 20px;
+}
+
+.page-title {
+  font-size: 30px;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+.page {
+  flex-direction: row;
+  box-flex: initial
+}

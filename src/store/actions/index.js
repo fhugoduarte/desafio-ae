@@ -1,0 +1,15 @@
+export {
+  gettingMovie,
+  getMovies,
+  getPopularMovies,
+  getMoviesSuccess,
+  getMoviesFail,
+  getMovieDetails,
+  getMovieDetailsSuccess,
+  getMovieDetailsFail,
+  getTopFourMovies,
+  modifyCurrentMoviePage,
+  getTopMovies,
+  getUpcomingMovies,
+  searchMovies,
+} from './movie';

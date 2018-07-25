@@ -1,0 +1,25 @@
+.box {
+  width: 220px;
+}
+
+.box-title {
+  font-size: 10px;
+  height: 40px; 
+  font-weight: 600;
+}
+
+.box-body {
+  height: 310px;
+}
+
+.box-footer {
+  color: black;
+}
+
+.card-image {
+  width: 200px;
+}
+
+.fa-star {
+  color: gold;
+}
