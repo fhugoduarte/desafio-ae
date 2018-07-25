@@ -33,6 +33,7 @@ export function* getTopFourMoviesSaga() {
     toastr.success('Sucesso!', 'Lista de filmes atualizada...');
     yield put(actions.getMoviesSuccess(topFour, response.data.total_pages));
   } catch (error) {
+    console.log('EROR', error);
     toastr.error('Erro!', 'Tente novamente em breve.');
     yield put(actions.getMoviesFail());
   }

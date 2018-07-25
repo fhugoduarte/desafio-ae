@@ -24,19 +24,22 @@ class PopularMovies extends Component {
       <div className="content">
         <div className="page-title">Filmes Populares</div>
         { loading ? <Loader message="Buscando..."/> : <MoviesPage data={movies} /> }
-        <div className="col-md-8 col-md-offset-3">
-          <ReactPaginate
-            pageCount={totalPages}
-            marginPagesDisplayed={2}
-            pageRangeDisplayed={2}
-            onPageChange={({selected}) => onGetPopularMovies(selected+1)}
-            breakClassName="break-me"
-            containerClassName="pagination"
-            activeClassName="active"
-            pageClassName="pages-pagination"
-            breakLabel={<a>...</a>}
-          />
-        </div>
+        { totalPages > 0 ? 
+          <div className="col-md-8 col-md-offset-3">
+            <ReactPaginate
+              pageCount={totalPages}
+              marginPagesDisplayed={2}
+              pageRangeDisplayed={2}
+              onPageChange={({selected}) => onGetPopularMovies(selected+1)}
+              breakClassName="break-me"
+              containerClassName="pagination"
+              activeClassName="active"
+              pageClassName="pages-pagination"
+              breakLabel={<a>...</a>}
+            />
+          </div>
+          : undefined
+        }
       </div>
     );
   };

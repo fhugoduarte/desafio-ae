@@ -13,6 +13,7 @@ const reducer = (state = initialState, action) => {
       return {
         ...state,
         loading: true,
+        totalPages: 0,
       }
     case actionTypes.GET_MOVIES_SUCCESS:
       return {

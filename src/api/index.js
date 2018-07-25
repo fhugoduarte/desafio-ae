@@ -1,15 +1,19 @@
-import axios from 'axios';
-import _ from 'lodash';
+import axios, {  } from 'axios';
+import { cacheAdapterEnhancer } from 'axios-extensions';
 
 import { API_KEY } from '../util/constants';
 
 const axiosAPI = axios.create({
   baseURL: 'https://api.themoviedb.org/3/',
   timeout: 10000,
+  // headers: {
+  //   'Cache-Control': 'no-cache'
+  // },
   params: {
     api_key: API_KEY,
     language: 'pt-BR',
   },
+  adapter: cacheAdapterEnhancer(axios.defaults.adapter),
 });
 
 const GET_MOVIE_URL = 'movie/popular/';
